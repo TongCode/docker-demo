@@ -1,0 +1,12 @@
+version: '2'
+services:
+  web:
+    build: .
+    ports:
+     - "3000:3000"
+    volumes:
+     - .:/var/www/docker-demo
+    depends_on:
+     - redis
+  redis:
+    image: redis:3.2.0-alpine
