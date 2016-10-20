@@ -1,4 +1,4 @@
-FROM node:lastest
+FROM node
 
 RUN mkdir -p /var/www/docker-demo
 
